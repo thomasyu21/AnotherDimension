@@ -8,6 +8,14 @@ public class Tester {
     int[]  B  =   {  1, 3, 5 };
     int[] C = {};
     int[] D = {-1,5,20,-43};
+    int[][] E = { {  1,  2, 3, 4 },
+                {  2, 3,  4,  1 },
+                { 3, 4,  1, 2 } };
+    int[][] F = { {  1,  1, 1 },
+                {  2, 2, 2 },
+                { 3,  3, 3 } };
+    int[][] G = { {  2,  2, 2 },
+                {  2, 2, 2 } };
     System.out.println(ArrayOps.sum(B));
     System.out.println(ArrayOps.sum(C));
     System.out.println(ArrayOps.sum(D));
@@ -22,5 +30,9 @@ public class Tester {
     System.out.println(ArrayOps.sum(A));
 
     System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+
+    System.out.println(ArrayOps.isRowMagic(E));
+    System.out.println(ArrayOps.isRowMagic(F));
+    System.out.println(ArrayOps.isRowMagic(G));
   }
 }
