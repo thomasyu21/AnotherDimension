@@ -64,4 +64,15 @@ public class ArrayOps {
     return equalSum == matrix.length;
   }
 
+  public static boolean isColMagic(int[][] matrix) {
+    int equalSum2 = 0;
+    for (int i = 0; i < matrix[0].length; i++) {
+      int[] sumColsTemp = sumCols(matrix);
+      if (sumColsTemp[0] == sumColsTemp[i]) {
+        equalSum2++;
+      }
+    }
+    return equalSum2 == matrix[0].length;
+  }
+
 }
