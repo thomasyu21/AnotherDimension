@@ -5,6 +5,12 @@ public class Tester {
                   { -5, -2,  2, -9 }
                   };
     int[]  B  =   {  1, 3, 5 };
+    int[] C = {};
+    int[] D = {-1,5,20,-43};
     System.out.println(ArrayOps.sum(B));
+    System.out.println(ArrayOps.sum(C));
+    System.out.println(ArrayOps.sum(D));
+    System.out.println(ArrayOps.largest(B));
+    System.out.println(ArrayOps.largest(D));
   }
 }
