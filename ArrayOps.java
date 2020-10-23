@@ -75,4 +75,9 @@ public class ArrayOps {
     return equalSum2 == matrix[0].length;
   }
 
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int[] tempSumCols = sumCols(matrix);
+    return (sum(matrix[row]) == tempSumCols[col]);
+  }
+
 }
