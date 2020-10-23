@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester {
   public static void main(String[] args) {
     int[][]  A  = {  {  1,  0, 12, -1 },
@@ -10,7 +11,10 @@ public class Tester {
     System.out.println(ArrayOps.sum(B));
     System.out.println(ArrayOps.sum(C));
     System.out.println(ArrayOps.sum(D));
+
     System.out.println(ArrayOps.largest(B));
     System.out.println(ArrayOps.largest(D));
+
+    System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
   }
 }

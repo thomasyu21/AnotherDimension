@@ -18,25 +18,12 @@ public class ArrayOps {
     return largestNum;
   }
 
-  public static String arrToString(int[] arr){
-    if (arr.length == 0) {
-      return "{}";
+  public static int[] sumRows(int[][] matrix) {
+    int[] sums = new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++) {
+      sums[i] = sum(matrix[i]);
     }
-    String converted = "{" + arr[0];
-    for (int i = 1; i < arr.length; i++) {
-      converted+= (", " + arr[i]);
-    }
-    converted+= "}";
-    return converted;
-  }
-
-  public static String arrayDeepToString(int[][] arr) {
-    String newStr = "{" + arrToString(arr[0]);
-    for (int i = 1; i < arr.length; i++){
-      newStr+=(", " + arrToString(arr[i]));
-    }
-    newStr+="}";
-    return newStr;
+    return sums;
   }
 
 }
